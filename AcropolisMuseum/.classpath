@@ -6,6 +6,5 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry kind="lib" path="D:/git/AcropolisMuseum/core-3.2.0.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
