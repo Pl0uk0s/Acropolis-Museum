@@ -6,5 +6,24 @@
     <string name="intro">intro</string>
     <string name="title_activity_splash">Splash</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_user_modeling">UserModeling</string>
+    
+    <string name="questionOneText">Do you permenantely live in Greece or are you a visitor?</string>
+    <string name="questionOneAnswerOne">Greece</string>
+    <string name="questionOneAnswerTwo">Visitor</string>
+    
+    <string name="questionTwoText">What is your profession?</string>
+    <string name="questionTwoAnswerOne">Student</string>
+    <string name="questionTwoAnswerTwo">University Student</string>
+    <string name="questionTwoAnswerThree">Worker</string>
+    <string name="questionTwoAnswerFour">Nothing of the above</string>
+    
+    <string name="questionThreeText">How often do you visit the museum?</string>
+    <string name="questionThreeAnswerOne">Once a year</string>
+    <string name="questionThreeAnswerTwo">3&#8211;5 times a year</string>
+    <string name="questionThreeAnswerThree">More than 5 times a year</string>
+    
+    <string name="scanQR">Scan QR</string>
+    <string name="scanNFC">Scan NFC</string>
 
 </resources>
