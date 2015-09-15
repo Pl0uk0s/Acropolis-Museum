@@ -7,6 +7,7 @@
     <string name="title_activity_splash">Splash</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_user_modeling">UserModeling</string>
+    <string name="title_activity_nfc">NfcActivity</string>
     
     <string name="questionOneText">Διαμένεται μόνιμα στην Ελλάδα ή είστε επισκέπτης;</string>
     <string name="questionOneAnswerOne">Ελλάδα</string>
@@ -25,5 +26,8 @@
     
     <string name="scanQR">Σκανάρισμα QR</string>
     <string name="scanNFC">Σκανάρισμα NFC</string>
+    
+    <string name="nfcAlert">Τοποθετήστε την συσκευή σας πάνω από το tag.</string>
+    <string name="nfcWait">Αναμονή για το tag ...</string>
     
 </resources>

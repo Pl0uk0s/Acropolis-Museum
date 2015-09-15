@@ -1,12 +1,29 @@
 package com.example.acropolismuseum;
 
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Locale;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.ResponseHandler;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.BasicResponseHandler;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.StrictMode;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,6 +39,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+	    StrictMode.setThreadPolicy(policy);
+		
 		Button btnQR, btnNFC;
 		
 		btnQR = (Button) findViewById(R.id.btnQR);
@@ -33,8 +53,23 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 				try {
 					Intent intent = new Intent(ACTION_SCAN);
-					intent.putExtra("SCAN_MODE", "PRODUCT_MODE");
+					intent.putExtra("SCAN_MODE", "QR_CODE_MODE");
 					startActivityForResult(intent, 0);
+				} catch (ActivityNotFoundException anfe) {
+					showDialog(MainActivity.this, "No Scanner Found", "Download a scanner code activity?", "Yes", "No").show();
+				}
+			}
+			
+		});
+		
+		btnNFC.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				try {
+					Intent intent = new Intent(MainActivity.this, NfcActivity.class);
+					intent.putExtra("SCAN_MODE", "NFC");
+					startActivityForResult(intent, 1);
 				} catch (ActivityNotFoundException anfe) {
 					showDialog(MainActivity.this, "No Scanner Found", "Download a scanner code activity?", "Yes", "No").show();
 				}
@@ -92,7 +127,51 @@ public class MainActivity extends Activity {
 
 				Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
 				toast.show();
+				
 			}
+		} else if (requestCode == 1) {
+			if (resultCode == RESULT_OK) {
+				String contents = intent.getStringExtra("SCAN_RESULT");
+				String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
+				
+				Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
+				toast.show();
+				
+				getInfo(contents);
+			}
+		}
+	}
+	
+	public void getInfo(String code) {
+		String url = "http://83.212.116.31/acropolismuseum/getInfo.php";
+		try {
+			
+			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+	        
+			url = url + "?artifact=" + code + "&mode=" + sharedPreferences.getString("level", "N/A") + "&lang=" + Locale.getDefault().getLanguage();
+	        
+	        HttpClient httpClient = new DefaultHttpClient();
+	        HttpPost httpPost = new HttpPost(url);
+	        
+	        ResponseHandler<String> responseHandler = new BasicResponseHandler();
+            String responseBody = httpClient.execute(httpPost, responseHandler);
+            JSONObject json = new JSONObject(responseBody);
+            JSONArray jArray = json.getJSONArray("infos");
+            String title = jArray.getJSONObject(0).getString("title");
+            Toast.makeText(this, title, Toast.LENGTH_LONG).show();
+            ArrayList<String> paragraphs = new ArrayList< String>();
+            
+//            for (int i = 0; i < jArray.getJSONObject(1).getString("paragraph").length(); i++)
+//            {
+//            	paragraphs.add(jArray.getJSONObject(1).getString(String.valueOf(i))); // = jArray.getJSONObject(i).getString("post_id");
+//            	Log.d("test",jArray.getJSONObject(i).getString(String.valueOf(i)));
+//            }
+            
+            
+            Toast.makeText(this, responseBody, Toast.LENGTH_LONG).show();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

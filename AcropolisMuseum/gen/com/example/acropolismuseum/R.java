@@ -53,7 +53,8 @@ public final class R {
         public static final int launcher_icon=0x7f020002;
         public static final int logo=0x7f020003;
         public static final int questionscreen=0x7f020004;
-        public static final int share_via_barcode=0x7f020005;
+        public static final int read_tag=0x7f020005;
+        public static final int share_via_barcode=0x7f020006;
     }
     public static final class id {
         public static final int action_settings=0x7f090036;
@@ -114,21 +115,22 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_user_modeling=0x7f030001;
-        public static final int app_picker_list_item=0x7f030002;
-        public static final int bookmark_picker_list_item=0x7f030003;
-        public static final int capture=0x7f030004;
-        public static final int encode=0x7f030005;
-        public static final int help=0x7f030006;
-        public static final int history_list_item=0x7f030007;
-        public static final int question1=0x7f030008;
-        public static final int question2=0x7f030009;
-        public static final int question3=0x7f03000a;
-        public static final int search_book_contents=0x7f03000b;
-        public static final int search_book_contents_header=0x7f03000c;
-        public static final int search_book_contents_list_item=0x7f03000d;
-        public static final int share=0x7f03000e;
-        public static final int splash=0x7f03000f;
+        public static final int activity_nfc=0x7f030001;
+        public static final int activity_user_modeling=0x7f030002;
+        public static final int app_picker_list_item=0x7f030003;
+        public static final int bookmark_picker_list_item=0x7f030004;
+        public static final int capture=0x7f030005;
+        public static final int encode=0x7f030006;
+        public static final int help=0x7f030007;
+        public static final int history_list_item=0x7f030008;
+        public static final int question1=0x7f030009;
+        public static final int question2=0x7f03000a;
+        public static final int question3=0x7f03000b;
+        public static final int search_book_contents=0x7f03000c;
+        public static final int search_book_contents_header=0x7f03000d;
+        public static final int search_book_contents_list_item=0x7f03000e;
+        public static final int share=0x7f03000f;
+        public static final int splash=0x7f030010;
     }
     public static final class menu {
         public static final int capture=0x7f0c0000;
@@ -214,6 +216,8 @@ public final class R {
         public static final int msg_share_text=0x7f0a0044;
         public static final int msg_sure=0x7f0a0045;
         public static final int msg_unmount_usb=0x7f0a0046;
+        public static final int nfcAlert=0x7f0a0091;
+        public static final int nfcWait=0x7f0a0092;
         public static final int preferences_actions_title=0x7f0a0047;
         public static final int preferences_auto_focus_title=0x7f0a0048;
         public static final int preferences_auto_open_web_title=0x7f0a0049;
@@ -255,18 +259,18 @@ public final class R {
         public static final int preferences_supplemental_summary=0x7f0a006d;
         public static final int preferences_supplemental_title=0x7f0a006e;
         public static final int preferences_vibrate_title=0x7f0a006f;
-        public static final int questionOneAnswerOne=0x7f0a0083;
-        public static final int questionOneAnswerTwo=0x7f0a0084;
-        public static final int questionOneText=0x7f0a0082;
-        public static final int questionThreeAnswerOne=0x7f0a008b;
-        public static final int questionThreeAnswerThree=0x7f0a008d;
-        public static final int questionThreeAnswerTwo=0x7f0a008c;
-        public static final int questionThreeText=0x7f0a008a;
-        public static final int questionTwoAnswerFour=0x7f0a0089;
-        public static final int questionTwoAnswerOne=0x7f0a0086;
-        public static final int questionTwoAnswerThree=0x7f0a0088;
-        public static final int questionTwoAnswerTwo=0x7f0a0087;
-        public static final int questionTwoText=0x7f0a0085;
+        public static final int questionOneAnswerOne=0x7f0a0084;
+        public static final int questionOneAnswerTwo=0x7f0a0085;
+        public static final int questionOneText=0x7f0a0083;
+        public static final int questionThreeAnswerOne=0x7f0a008c;
+        public static final int questionThreeAnswerThree=0x7f0a008e;
+        public static final int questionThreeAnswerTwo=0x7f0a008d;
+        public static final int questionThreeText=0x7f0a008b;
+        public static final int questionTwoAnswerFour=0x7f0a008a;
+        public static final int questionTwoAnswerOne=0x7f0a0087;
+        public static final int questionTwoAnswerThree=0x7f0a0089;
+        public static final int questionTwoAnswerTwo=0x7f0a0088;
+        public static final int questionTwoText=0x7f0a0086;
         public static final int result_address_book=0x7f0a0070;
         public static final int result_calendar=0x7f0a0071;
         public static final int result_email_address=0x7f0a0072;
@@ -279,8 +283,9 @@ public final class R {
         public static final int result_uri=0x7f0a0079;
         public static final int result_wifi=0x7f0a007a;
         public static final int sbc_name=0x7f0a007b;
-        public static final int scanNFC=0x7f0a008f;
-        public static final int scanQR=0x7f0a008e;
+        public static final int scanNFC=0x7f0a0090;
+        public static final int scanQR=0x7f0a008f;
+        public static final int title_activity_nfc=0x7f0a0082;
         public static final int title_activity_splash=0x7f0a007f;
         public static final int title_activity_user_modeling=0x7f0a0081;
         public static final int wifi_changing_network=0x7f0a007c;

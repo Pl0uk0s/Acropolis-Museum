@@ -7,6 +7,7 @@
     <string name="title_activity_splash">Splash</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_user_modeling">UserModeling</string>
+    <string name="title_activity_nfc">NfcActivity</string>
     
     <string name="questionOneText">Do you permenantely live in Greece or are you a visitor?</string>
     <string name="questionOneAnswerOne">Greece</string>
@@ -25,5 +26,8 @@
     
     <string name="scanQR">Scan QR</string>
     <string name="scanNFC">Scan NFC</string>
+    
+    <string name="nfcAlert">Place your device over the tag.</string>
+    <string name="nfcWait">Waiting for tag ...</string>
 
 </resources>
