@@ -1,8 +1,5 @@
 package com.example.acropolismuseum;
 
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Locale;
 
 import org.apache.http.client.HttpClient;
@@ -10,7 +7,6 @@ import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import android.app.Activity;
@@ -23,12 +19,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	
@@ -70,8 +64,8 @@ public class MainActivity extends Activity {
 					Intent intent = new Intent(MainActivity.this, NfcActivity.class);
 					intent.putExtra("SCAN_MODE", "NFC");
 					startActivityForResult(intent, 1);
-				} catch (ActivityNotFoundException anfe) {
-					showDialog(MainActivity.this, "No Scanner Found", "Download a scanner code activity?", "Yes", "No").show();
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
 			
@@ -125,17 +119,18 @@ public class MainActivity extends Activity {
 				String contents = intent.getStringExtra("SCAN_RESULT");
 				String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
 
-				Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
-				toast.show();
+				//Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
+				//toast.show();
 				
+				getInfo(contents);
 			}
 		} else if (requestCode == 1) {
 			if (resultCode == RESULT_OK) {
 				String contents = intent.getStringExtra("SCAN_RESULT");
 				String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
 				
-				Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
-				toast.show();
+				//Toast toast = Toast.makeText(this, "Content:" + contents + " Format:" + format, Toast.LENGTH_LONG);
+				//toast.show();
 				
 				getInfo(contents);
 			}
@@ -143,33 +138,27 @@ public class MainActivity extends Activity {
 	}
 	
 	public void getInfo(String code) {
-		String url = "http://83.212.116.31/acropolismuseum/getInfo.php";
+		
+		String url = "http://52.88.14.185/acropolis/getInfo.php";
 		try {
 			
 			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-	        
+			//Toast.makeText(this, sharedPreferences.getString("level", "N/A") + " " + Locale.getDefault().getLanguage(), Toast.LENGTH_LONG).show();
 			url = url + "?artifact=" + code + "&mode=" + sharedPreferences.getString("level", "N/A") + "&lang=" + Locale.getDefault().getLanguage();
-	        
+	        //Toast.makeText(this, url, Toast.LENGTH_LONG).show();
 	        HttpClient httpClient = new DefaultHttpClient();
 	        HttpPost httpPost = new HttpPost(url);
 	        
 	        ResponseHandler<String> responseHandler = new BasicResponseHandler();
             String responseBody = httpClient.execute(httpPost, responseHandler);
             JSONObject json = new JSONObject(responseBody);
-            JSONArray jArray = json.getJSONArray("infos");
-            String title = jArray.getJSONObject(0).getString("title");
-            Toast.makeText(this, title, Toast.LENGTH_LONG).show();
-            ArrayList<String> paragraphs = new ArrayList< String>();
+            String info = (String) json.get("info");
             
-//            for (int i = 0; i < jArray.getJSONObject(1).getString("paragraph").length(); i++)
-//            {
-//            	paragraphs.add(jArray.getJSONObject(1).getString(String.valueOf(i))); // = jArray.getJSONObject(i).getString("post_id");
-//            	Log.d("test",jArray.getJSONObject(i).getString(String.valueOf(i)));
-//            }
-            
-            
-            Toast.makeText(this, responseBody, Toast.LENGTH_LONG).show();
-			
+            //Toast.makeText(this, info, Toast.LENGTH_LONG).show();
+
+        	Intent intent = new Intent(MainActivity.this, ArtifactInfo.class);
+			intent.putExtra("info", info);
+			startActivity(intent);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
