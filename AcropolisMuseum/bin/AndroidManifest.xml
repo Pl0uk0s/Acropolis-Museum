@@ -64,6 +64,10 @@
             android:name=".ArtifactInfo"
             android:label="@string/title_activity_artifact_info" >
         </activity>
+        <activity
+            android:name=".Quiz"
+            android:label="@string/title_activity_quiz" >
+        </activity>
     </application>
 
 </manifest>

@@ -25,5 +25,207 @@
     <string name="nfcAlert">Place your device over the tag.</string>
     <string name="nfcWait">Waiting for tag ...</string>
     <string name="title_activity_artifact_info">ArtifactInfo</string>
+    <string name="infostring"><b>Acropolis Museum</b>\n\nΒογιατζή Ελένη\n\nΚοκαρίδα Νάνσυ\n\nΠλουμιδάκης Κωνσταντίνος\n\nΠρόκειται για μια εκπαιδευτική εφαρμογή σε Android η οποία δημιουργήθηκε στα πλαίσια εργασιών του Μεταπτυχιακού προγράμματος "Προηγμένα Συστήματα Πληροφορικής" του τμήματος Πληροφορικής Πανεπιστημίου Πειραιώς. Περιέχει πληροφορίες για δέκα μνημεία του μουσείου της Ακρόπολης και ένα τεστ γνώσεων.</string>
+	<string name="ScoreTitle">Results</string>
+	<string name="ScoreText1">Your score is: </string>
+	<string name="ScoreText2">Do you want to play again?</string>
+	<string name="ScoreYes">Yes</string>
+	<string name="ScoreNo">No</string>
+    
+    
+    <string-array name="questions">
+        <item>Which myth did the ancient Greeks use to explain the change of the seasons?</item>
+        <item>Which Olympian god took Persephone out of her mother’s hands?</item>
+        <item>In which season of the year, Persephone would return to her mother?</item>
+        <item>In which temple we can see The Caryatids posing as columns?</item>
+        <item>How many of the Caryatids can we find  today at the Acropolis Museum?</item>
+        <item>Since which age it became common to replace columns with statues?</item>
+        <item>In which museum there is a part of the Parthenon’s sculptures?</item>
+        <item>)In how many years was the construction of Parthenon completed?</item>
+        <item>When did the construction of the Parthenon start?</item>
+        <item>How many Labour’s did Hercules perform?</item>
+        <item>Which mythical hero killed the Hydra?</item>
+        <item>Who ordered Herakles to kill the Hydra?</item>
+        <item>What was the gold and ivory statue of goddess Athena holding in its hands?</item>
+        <item>Who was goddess Athena’s mother?</item>
+        <item>What did goddess Athena give as a gift to the Athenians thus becoming their protector?</item>
+        <item>Who was the father of Dionysus?</item>
+        <item>Dionysus is connected with:</item>
+        <item>What are the most well known forms of Dionysus?</item>
+        <item>Who was the father of Hermes?</item>
+        <item> What was the most well known characteristic of Hermes?</item>
+        <item>Which were the symbols of Hermes?</item>
+        <item>Where was Hercules born?</item>
+        <item>Whose son was Hercules?</item>
+        <item>How Many years did Heracules stay next to Eurystheus to expiate his crime?</item>
+        <item>Where was the temple of Athena Nike built?</item>
+        <item>When was the classic temple of Athena Nike built?</item>
+        <item>In the fifth century AD, the temple of Athena Nike was converted into:</item>
+        <item>Which old temple replaced The Erechtheion?</item>
+        <item>The Erechtheion was the last of the great works envisioned by:</item>
+        <item>The Erechtheion burned, perhaps during the siege of the Acropolis by the Roman general Sulla:</item>
+    </string-array>
+    <string-array name="answerA">
+        <item>The Herakles Labours</item>
+        <item>Zeus</item>
+        <item>Spring</item>
+        <item>The temple of Athena Nike</item>
+        <item>All but one</item>
+        <item>Since the Archaic Age</item>
+        <item>At the Louvre</item>
+        <item>In 5 Years</item>
+        <item>In 450 B.C</item>
+        <item>10</item>
+        <item>Theseus</item>
+        <item>Agamemnon</item>
+        <item>A shield and a spear</item>
+        <item>Hera</item>
+        <item>A shield</item>
+        <item>Zeus</item>
+        <item>war</item>
+        <item>A mature male, bearded and robed</item>
+        <item>Zeus</item>
+        <item>He was an Olympian god in Greek religion and mythology</item>
+        <item>trident</item>
+        <item>In Athens</item>
+        <item>Zeus</item>
+        <item>10</item>
+        <item>Southwest edge of the Acropolis</item>
+        <item>between 420-425 BC</item>
+        <item>a tower</item>
+        <item>the temple of Poseidon</item>
+        <item>Pericies</item>
+        <item>in the 4st century AD</item>
+    </string-array>
+    <string-array name="answerB">
+        <item>The Prometheus myth</item>
+        <item>Pluto</item>
+        <item>Winter</item>
+        <item>The Parthenon</item>
+        <item>All but two</item>
+        <item>Since the Geometric Age</item>
+        <item>At The Metropolitan Museum of Art, New York</item>
+        <item>In 10 Years</item>
+        <item>In 447 B.C</item>
+        <item>12</item>
+        <item>Herakles</item>
+        <item>Pericleous</item>
+        <item>A spear and a Nike</item>
+        <item>Hestia</item>
+        <item>A horse</item>
+        <item>Apollon</item>
+        <item>fertility</item>
+        <item>A beardless, sensuous, naked or half-naked androgynous youth</item>
+        <item>Apollon</item>
+        <item>He was the second youngest of the Olympian gods</item>
+        <item>bow</item>
+        <item>In Crete</item>
+        <item>Apollon</item>
+        <item>15</item>
+        <item>Northwest edge of the Acropolis</item>
+        <item>between 426-421 BC</item>
+        <item>a house</item>
+        <item>the temple of Apollon</item>
+        <item>Themistocles</item>
+        <item>in the 3st century AD</item>
+    </string-array>
+    <string-array name="answerC">
+        <item>The Persephone and Demeter\'s myth</item>
+        <item>Poseidon</item>
+        <item>Autumn</item>
+        <item>The Erechtheion</item>
+        <item>None of them</item>
+        <item>Since the Classic Age</item>
+        <item>At the British Museum</item>
+        <item>In 15 Years</item>
+        <item>In 350 B.C</item>
+        <item>15</item>
+        <item>Odysseus</item>
+        <item>Eurystheus</item>
+        <item>A snake and a shield</item>
+        <item>Metis</item>
+        <item>A spear</item>
+        <item>Poseidon</item>
+        <item>fire</item>
+        <item>ΟA man after his triumphant, disorderly arrival or return</item>
+        <item>Poseidon</item>
+        <item>He was a god of transitions and boundaries</item>
+        <item>kerykeion or Latin caduceus</item>
+        <item>In Sparta</item>
+        <item>Hermes</item>
+        <item>12</item>
+        <item>Southeast edge of the Acropolis</item>
+        <item>between 426-430 BC</item>
+        <item>nothing</item>
+        <item>the temple of Athena Polias</item>
+        <item>Miltiadis</item>
+        <item>in the 2st century AD</item>
+    </string-array>
+    <string-array name="answerD">
+        <item>The Pandora’s myth</item>
+        <item>Mars</item>
+        <item>Summer</item>
+        <item>The Temple of Hephaestus</item>
+        <item>All of them</item>
+        <item>Since the Hellenistic Age</item>
+        <item>At the Archeological Museum </item>
+        <item>In 20 Years</item>
+        <item>In 500 B.C</item>
+        <item>5</item>
+        <item>Achilles</item>
+        <item>Menelaus</item>
+        <item>A Nike and a shield</item>
+        <item>Europe</item>
+        <item>An olive tree</item>
+        <item>Ifestos</item>
+        <item>music</item>
+        <item>All the above</item>
+        <item>Ifestos</item>
+        <item>All the above</item>
+        <item>bludgeon</item>
+        <item>in Thebes</item>
+        <item>Ifestos</item>
+        <item>9</item>
+        <item>Northeast edge of the Acropolis</item>
+        <item>between 410-420 BC</item>
+        <item>a church</item>
+        <item>none of them</item>
+        <item>Thoukididis</item>
+        <item>in the 1st century AD</item>
+    </string-array>
+    <string-array name="correctanswer">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>3</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>1</item>
+        <item>4</item>
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="title_activity_quiz">Quiz</string>
 
 </resources>

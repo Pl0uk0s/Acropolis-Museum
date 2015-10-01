@@ -2,8 +2,11 @@ package com.example.acropolismuseum;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
@@ -44,7 +47,7 @@ public class ArtifactInfo extends Activity {
 		}
 	}
 
-	@Override
+    @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
@@ -60,9 +63,30 @@ public class ArtifactInfo extends Activity {
 		if (id == android.R.id.home) { 
 			this.finish();
 			return true;
-		}else if (id == R.id.action_settings) {
+		} else if (id == R.id.info) {
+			openInfo();
+		} else if (id == R.id.action_settings) {
 			return true;
+		}else if (id == R.id.quiz) {
+			Intent i = new Intent(ArtifactInfo.this, Quiz.class);
+            startActivity(i);
+            //finish();
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	private void openInfo() {
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(ArtifactInfo.this);
+		
+		alertDialogBuilder.setTitle("Info");
+		LayoutInflater inflater = this.getLayoutInflater();
+		alertDialogBuilder.setView(inflater.inflate(R.layout.dialog_info, null));
+		alertDialogBuilder.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int id) {
+				dialog.cancel();
+			}
+		});
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		alertDialog.show(); 
 	}
 }

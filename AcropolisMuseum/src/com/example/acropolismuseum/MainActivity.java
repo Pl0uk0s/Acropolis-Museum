@@ -19,6 +19,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.preference.PreferenceManager;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -87,8 +88,29 @@ public class MainActivity extends Activity {
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
+		} else if (id == R.id.info) {
+			openInfo();
+		} else if (id == R.id.quiz) {
+			Intent i = new Intent(MainActivity.this, Quiz.class);
+            startActivity(i);
+            //finish();
 		}
 		return super.onOptionsItemSelected(item);
+	}
+	
+	private void openInfo() {
+		AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MainActivity.this);
+		
+		alertDialogBuilder.setTitle("Info");
+		LayoutInflater inflater = this.getLayoutInflater();
+		alertDialogBuilder.setView(inflater.inflate(R.layout.dialog_info, null));
+		alertDialogBuilder.setPositiveButton("Ok",new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int id) {
+				dialog.cancel();
+			}
+		});
+		AlertDialog alertDialog = alertDialogBuilder.create();
+		alertDialog.show(); 
 	}
 	
 	private static AlertDialog showDialog(final Activity act, CharSequence title, CharSequence message, CharSequence buttonYes, CharSequence buttonNo) {

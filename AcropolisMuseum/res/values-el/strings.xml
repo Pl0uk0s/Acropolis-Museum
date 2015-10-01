@@ -30,4 +30,208 @@
     <string name="nfcAlert">Τοποθετήστε την συσκευή σας πάνω από το tag.</string>
     <string name="nfcWait">Αναμονή για το tag ...</string>
     
+    <string name="ScoreTitle">Αποτέλεσμα</string>
+	<string name="ScoreText1">Το σκορ σας στο quiz είναι: </string>
+	<string name="ScoreText2">Θέλετε να ξαναπαίξεται;</string>
+	<string name="ScoreYes">Ναι</string>
+	<string name="ScoreNo">Οχι</string>
+    
+    <string-array name="questions">
+		<item>Με ποιο μύθο οι αρχαίοι εξηγούσαν την αλλαγή των εποχών;</item>
+		<item>Ποιος Θεός του Ολύμπου άρπαξε την Περσεφόνη από τη μητέρα της τη Δήμητρα;</item>
+		<item>Σε ποια εποχή η Περσεφόνη επέστρεφε στη μητέρα της τη θεά Δήμητρα;</item>
+		<item>Σε ποιο ναό συναντάμε  τις Καρυάτιδες αντί για κίονες;</item>
+		<item>Όλα τα αγάλματα των Καρυάτιδων βρίσκονται σήμερα στο Μουσείο της Ακρόπολης;</item>
+		<item>Από ποια εποχή έγινε γνωστή η αντικατάσταση κιόνων με αγάλματα;</item>
+		<item>Σε ποιο μουσείο βρίσκεται ένα μέρος των γλυπτών του Παρθενώνα;</item>
+		<item>Σε πόσα χρόνια ολοκληρώθηκε η κατασκευή του Παρθενώνα;</item>
+		<item>Πότε ξεκίνησε η ανέγερση του Παρθενώνα;</item>
+		<item>Πόσους άθλους πραγματοποίησε ο Ηρακλής;</item>
+		<item>Ποιος μυθικός ήρωας εξουδετέρωσε τη Λερναία Ύδρα;</item>
+		<item>Ποιος διέταξε τον Ηρακλή να σκοτώσει τη Λερναία Ύδρα;</item>
+		<item>Τι κρατούσε στα χέρια το χρυσελεφάντινο άγαλμα της Αθηνάς;</item>
+		<item>Ποια ήταν η μητέρα της Αθηνάς;</item>
+		<item>Τι δώρησε η Αθηνά στους Αθηναίους και έτσι έγινε η προστάτιδα της Αθήνας;</item>
+		<item>Ποιος ήταν ο πατέρας του Διόνυσου;</item>
+		<item>Ο Διόνυσος συνδέεται με:</item>
+		<item>Ποιες είναι οι κύριες μορφές, με τις οποίες εμφανίζεται ο Διόνυσος στη λατρεία του;</item>
+		<item>Ποιος ήταν ο πατέρας του Ερμή;</item>
+		<item>Ποιο ήταν το βασικό γνώρισμα του Ερμή;</item>
+		<item>Ποια ήταν τα σύμβολα του Ερμή;</item>
+		<item>Που γεννήθηκε ο Ηρακλής;</item>
+		<item>Ποιού γιος ήταν ο Ηρακλής;</item>
+		<item>Πόσα  χρόνια  αναγκάστηκε  ο  Ηρακλής  να  υπηρετήσει τον  Ευρυσθέα  ώστε  να μπορέσει να εξαγνισθεί;</item>
+		<item>Που βρίσκεται o ναός της Αθηνάς Νίκης;</item>
+		<item> Πότε κτίστηκε ο κλασικός ναός της Αθηνάς Νίκης;</item>
+		<item>Ο ναός της Αθηνάς Νίκης τον 5ο αιώνα μ.Χ. μετατράπηκε σε:</item>
+		<item>Ποιον Αρχαίο ναό αντικατέστησε Το Ερέχθειο;</item>
+		<item>Το Ερέχθειο ήταν το τελευταίο από τα μεγάλα έργα που οραματίστηκε:</item>
+		<item>Το Ερέχθειο κάηκε κατά την πολιορκία της Ακρόπολης από τον Ρωμαίο στρατηγό Σύλλα:</item>
+	</string-array>
+
+    <string-array name="answerA">
+		<item>Τους Άθλους του Ηρακλή</item>
+		<item>Ο Δίας</item>
+		<item>Άνοιξη</item>
+		<item>Ναό της Αθηνάς Νίκης</item>
+		<item>Όλα εκτός από ένα</item>
+		<item>Από την Αρχαϊκή Εποχή</item>
+		<item>Στο Λούβρο</item>
+		<item>5 χρόνια</item>
+		<item>450 π. Χ.</item>
+		<item>10</item>
+		<item>Ο Θησέας</item>
+		<item>Ο Αγαμέμνωνας</item>
+		<item>Μία ασπίδα και ένα δόρυ</item>
+		<item>Η Ήρα</item>
+		<item>Μία ασπίδα</item>
+		<item>Ο Δίας</item>
+		<item>Τον πόλεμο</item>
+		<item>Το δένδρο</item>
+		<item>Ο Δίας</item>
+		<item>Λειτουργούσε ως αγγελιοφόρος των Θεών</item>
+		<item>Το ρόπαλο</item>
+		<item>Στην Θήβα</item>
+		<item>Του Ποσειδώνα</item>
+		<item>10</item>
+		<item>στη νοτιοδυτική πλευρά του Ιερού Βράχου</item>
+		<item>20-421 π.Χ</item>
+		<item>Τζαμί</item>
+		<item>Τον ναό της Αθηνάς Πολιάδας</item>
+		<item>Ο Θεμιστοκλής</item>
+		<item>Τον 3ο αι. μ.Χ.</item>
+	</string-array>
+	
+    <string-array name="answerB">
+		<item>Το μύθο του Προμηθέα</item>
+		<item>Ο Πλούτωνας</item>
+		<item>Χειμώνα</item>
+		<item>Παρθενώνα</item>
+		<item>Όλα εκτός από δύο</item>
+		<item>Από τη Γεωμετρική Εποχή</item>
+		<item>Στο Μουσείο Τέχνης, Νέα Υόρκη</item>
+		<item>10 χρόνια</item>
+		<item>447 π. Χ.</item>
+		<item>12</item>
+		<item>Ο Ηρακλής</item>
+		<item>Ο Περικλής</item>
+		<item>Ένα δόρυ και μία Νίκη</item>
+		<item>Η Εστία</item>
+		<item>Ένα άλογο</item>
+		<item>Ο Απόλλωνας</item>
+		<item>Την γονιμότητα</item>
+		<item>Ο ενθουσιαστικός Διόνυσος</item>
+		<item>Ο Απόλλωνας</item>
+		<item>Διέθετε ανθρώπινη όψη καθώς ήταν πρώτος στην απατεωνιά, το ψέμα και την κλεψιά</item>
+		<item>Το  κηρύκειο,  έμβλημα  των  γοργόφτερων  αγγελιοφόρων, και  τα  φτερωτά σανδάλια</item>
+		<item>Στην Αθήνα</item>
+		<item>Του Δία</item>
+		<item>15</item>
+		<item>στη βοριαοδυτική πλευρά του Ιερού Βράχου</item>
+		<item>422-421 π.Χ</item>
+		<item>Εκκλησία</item>
+		<item>Τον ναό του Ποσειδώνα</item>
+		<item>Ο Περικλής</item>
+		<item>Τον 2ο αι. π.Χ.</item>
+	</string-array>
+	
+    <string-array name="answerC">
+		<item>Το μύθο της Περσεφόνης και της Δήμητρας</item>
+		<item>Ο Ποσειδώνας</item>
+		<item>Φθινόπωρο</item>
+		<item>Ερέχθειο</item>
+		<item>Κανένα δεν βρίσκεται εκεί</item>
+		<item>Από την Κλασσική Εποχή</item>
+		<item>Στο Βρετανικό Μουσείο</item>
+		<item>15 χρόνια</item>
+		<item>350 π. Χ.</item>
+		<item>15</item>
+		<item>Ο Οδυσσεάς</item>
+		<item>Ο Ευρυσθέας</item>
+		<item>Ένα φίδι και μία ασπίδα</item>
+		<item>Η Μέτιδα</item>
+		<item>Ένα δόρυ</item>
+		<item>Ο Ποσειδώνας</item>
+		<item>Την φωτιά</item>
+		<item>Ο Ζαγρεύς</item>
+		<item>Ο Ποσειδώνας</item>
+		<item>Ήταν από τις θεότητες που για τις δραστηριότητες τους χρησιμοποιούν τη σκοτεινή Νύχτα</item>
+		<item>Η τρίαινα</item>
+		<item>Στην Κρήτη</item>
+		<item>Του Ερμή</item>
+		<item>12</item>
+		<item>στην ανατολική πλευρά του Ιερού Βράχου</item>
+		<item>425-421 π.Χ</item>
+		<item>Πυριτιδαποθήκη</item>
+		<item>Τον ναό του Απόλλωνα</item>
+		<item>Ο Μιλτιάδης</item>
+		<item>Τον 1ο αι. μ.Χ.</item>
+	</string-array>
+	
+    <string-array name="answerD">
+		<item>Το μύθο της Πανδώρας</item>
+		<item>Ο Άρης</item>
+		<item>Καλοκαίρι</item>
+		<item>Ναό του Ηφαίστου</item>
+		<item>Όλα βρίσκονται εκεί</item>
+		<item>Από την Ελληνιστική Εποχή</item>
+		<item>Στο αρχαιολογικό Μουσείο</item>
+		<item>20 χρόνια</item>
+		<item>500 π. Χ.</item>
+		<item>5</item>
+		<item>Ο Αχιλλέας</item>
+		<item>Ο Μενέλαος</item>
+		<item>Μία Νίκη και μία ασπίδα</item>
+		<item>Η Ευρώπη</item>
+		<item>Μια ελιά</item>
+		<item>Ο Ήφαιστος</item>
+		<item>Την μουσική</item>
+		<item>Όλα τα παραπάνω</item>
+		<item>Ο Ήφαιστος</item>
+		<item>Όλα τα παραπάνω</item>
+		<item>Το τόξο</item>
+		<item>Στην Σπάρτη</item>
+		<item>Του Απόλλωνα</item>
+		<item>9</item>
+		<item>στη δυτική πλευρά του Ιερού Βράχου</item>
+		<item>426-421 π.Χ</item>
+		<item>Σε πύργο</item>
+		<item>Τον Ναό του Ηφαίστου</item>
+		<item>Ο Θουκυδίδης</item>
+		<item>Τον 1ο αι. π.Χ.</item>
+	</string-array>
+	
+    <string-array name="correctanswer">
+		<item>3</item>
+		<item>2</item>
+		<item>1</item>
+		<item>3</item>
+		<item>2</item>
+		<item>1</item>
+		<item>3</item>
+		<item>3</item>
+		<item>2</item>
+		<item>2</item>
+		<item>2</item>
+		<item>3</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>1</item>
+		<item>4</item>
+		<item>2</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>1</item>
+		<item>4</item>
+		<item>2</item>
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+	</string-array>
+    
 </resources>
