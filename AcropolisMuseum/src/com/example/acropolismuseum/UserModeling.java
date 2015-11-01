@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class UserModeling extends Activity {
 	
 	String FILENAME = "userModel.um";
-	String ANSWERONE,ANSWERTWO,ANSWERTHREE;
+	Integer ANSWERONE,ANSWERTWO,ANSWERTHREE,ANSWERFOUR;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class UserModeling extends Activity {
 		setContentView(R.layout.question1);
 		
 		TextView txtQuestion1;
-		Button button1, button2;
+		Button button1, button2, button3;
 		
 		txtQuestion1 = (TextView) findViewById(R.id.txtQuestion);	
 		txtQuestion1.setText(R.string.questionOneText);
@@ -44,11 +44,14 @@ public class UserModeling extends Activity {
 		button2 = (Button) findViewById(R.id.button2);
 		button2.setText(R.string.questionOneAnswerTwo);
 		
+		button3 = (Button) findViewById(R.id.button3);
+		button3.setText(R.string.questionOneAnswerThree);
+		
 		button1.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERONE = "Greece";
+				ANSWERONE = 1;
 				SecondQuestion();
 			}
 			
@@ -58,7 +61,17 @@ public class UserModeling extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERONE = "Visitor";
+				ANSWERONE = 2;
+				SecondQuestion();
+			}
+			
+		});
+		
+		button3.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ANSWERONE = 3;
 				SecondQuestion();
 			}
 			
@@ -70,7 +83,7 @@ public class UserModeling extends Activity {
 		setContentView(R.layout.question2);
 		
 		TextView txtQuestion1;
-		Button button1, button2, button3, button4;
+		Button button1, button2, button3;
 		
 		txtQuestion1 = (TextView) findViewById(R.id.txtQuestion);	
 		txtQuestion1.setText(R.string.questionTwoText);
@@ -84,14 +97,12 @@ public class UserModeling extends Activity {
 		button3 = (Button) findViewById(R.id.button3);
 		button3.setText(R.string.questionTwoAnswerThree);
 		
-		button4 = (Button) findViewById(R.id.button4);
-		button4.setText(R.string.questionTwoAnswerFour);
 		
 		button1.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERTWO = "Student";
+				ANSWERTWO = 1;
 				ThirdQuestion();
 			}
 			
@@ -101,7 +112,7 @@ public class UserModeling extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERTWO = "Uni";
+				ANSWERTWO = 2;
 				ThirdQuestion();
 			}
 			
@@ -111,28 +122,19 @@ public class UserModeling extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERTWO = "Worker";
+				ANSWERTWO = 3;
 				ThirdQuestion();
 			}
 			
 		});
 		
-		button4.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				ANSWERTWO = "Other";
-				ThirdQuestion();
-			}
-			
-		});
 	}
 	
 	public void ThirdQuestion() {
 		setContentView(R.layout.question3);
 		
 		TextView txtQuestion1;
-		Button button1, button2, button3;
+		Button button1, button2, button3, button4;
 		
 		txtQuestion1 = (TextView) findViewById(R.id.txtQuestion);	
 		txtQuestion1.setText(R.string.questionThreeText);
@@ -146,11 +148,75 @@ public class UserModeling extends Activity {
 		button3 = (Button) findViewById(R.id.button3);
 		button3.setText(R.string.questionThreeAnswerThree);
 		
+		button4 = (Button) findViewById(R.id.button4);
+		button4.setText(R.string.questionThreeAnswerFour);
+		
 		button1.setOnClickListener(new View.OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERTHREE = "1";
+				ANSWERTHREE = 1;
+				FourthQuestion();
+			}
+			
+		});
+		
+		button2.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ANSWERTHREE = 2;
+				FourthQuestion();
+			}
+			
+		});
+		
+		button3.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ANSWERTHREE = 3;
+				FourthQuestion();
+			}
+			
+		});
+		
+		button4.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ANSWERTHREE = 4;
+				FourthQuestion();
+			}
+			
+		});
+		
+	}
+	
+	public void FourthQuestion() {
+		setContentView(R.layout.question4);
+		
+		TextView txtQuestion1;
+		Button button1, button2, button3;
+		
+		txtQuestion1 = (TextView) findViewById(R.id.txtQuestion);	
+		txtQuestion1.setText(R.string.questionFourText);
+		
+		button1 = (Button) findViewById(R.id.button1);
+		button1.setText(R.string.questionFourAnswerOne);
+		
+		button2 = (Button) findViewById(R.id.button2);
+		button2.setText(R.string.questionFourAnswerTwo);
+		
+		button3 = (Button) findViewById(R.id.button3);
+		button3.setText(R.string.questionFourAnswerThree);
+		
+		
+		button1.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				ANSWERFOUR = 1;
 				UserAssessment();
 			}
 			
@@ -160,7 +226,7 @@ public class UserModeling extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERTHREE = "2";
+				ANSWERFOUR = 2;
 				UserAssessment();
 			}
 			
@@ -170,16 +236,16 @@ public class UserModeling extends Activity {
 
 			@Override
 			public void onClick(View v) {
-				ANSWERTHREE="3";
+				ANSWERFOUR = 3;
 				UserAssessment();
 			}
 			
 		});
-		
+			
 	}
 	
 	public void UserAssessment() {
-		if (ANSWERTWO == "Student") {
+		if(ANSWERTHREE == 1 || ANSWERFOUR == 1) {
 			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 			SharedPreferences.Editor editor = sharedPreferences.edit(); 
 			editor.putString("level", "1");
@@ -188,28 +254,19 @@ public class UserModeling extends Activity {
 			Intent i = new Intent(UserModeling.this, MainActivity.class);
             startActivity(i);
             finish();
-		} else if (ANSWERTHREE == "1") {
-			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-			SharedPreferences.Editor editor = sharedPreferences.edit(); 
-			editor.putString("level", "1");
-			editor.putString("student", "no");
-			editor.commit();
-			Intent i = new Intent(UserModeling.this, MainActivity.class);
-            startActivity(i);
-            finish();
-		} else if (ANSWERTHREE == "2") {
-			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-			SharedPreferences.Editor editor = sharedPreferences.edit(); 
-			editor.putString("level", "2");
-			editor.putString("student", "no");
-			editor.commit();
-			Intent i = new Intent(UserModeling.this, MainActivity.class);
-            startActivity(i);
-            finish();
-		} else if (ANSWERTHREE == "3") {
+		}else if (ANSWERONE == 3 || ANSWERTWO == 3) {
 			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 			SharedPreferences.Editor editor = sharedPreferences.edit(); 
 			editor.putString("level", "3");
+			editor.putString("student", "no");
+			editor.commit();
+			Intent i = new Intent(UserModeling.this, MainActivity.class);
+            startActivity(i);
+            finish();
+		} else {
+			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+			SharedPreferences.Editor editor = sharedPreferences.edit(); 
+			editor.putString("level", "2");
 			editor.putString("student", "no");
 			editor.commit();
 			Intent i = new Intent(UserModeling.this, MainActivity.class);

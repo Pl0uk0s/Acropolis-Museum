@@ -37,12 +37,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
     
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+  
 
 </RelativeLayout>

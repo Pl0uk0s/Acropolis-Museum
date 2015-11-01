@@ -9,26 +9,29 @@
     <string name="title_activity_user_modeling">UserModeling</string>
     <string name="title_activity_nfc">NfcActivity</string>
     
-    <string name="questionOneText">Διαμένεται μόνιμα στην Ελλάδα ή είστε επισκέπτης;</string>
-    <string name="questionOneAnswerOne">Ελλάδα</string>
-    <string name="questionOneAnswerTwo">Επισκέπτης</string>
-    
-    <string name="questionTwoText">Ποιό είναι το επάγγελμά σας;</string>
-    <string name="questionTwoAnswerOne">Μαθητής</string>
-    <string name="questionTwoAnswerTwo">Φοιτητής</string>
-    <string name="questionTwoAnswerThree">Εργαζόμενος</string>
-    <string name="questionTwoAnswerFour">Τίποτα από τα παραπάνω</string>
-    
-    <string name="questionThreeText">Πόσο συχνά επισκέπτεστε μουσεία;</string>
-    <string name="questionThreeAnswerOne">Μια φορά τον χρόνοr</string>
-    <string name="questionThreeAnswerTwo">3&#8211;5 φορές τον χρόνο</string>
-    <string name="questionThreeAnswerThree">Άνω των 5 γορών το χρόνο</string>
+    <string name="questionOneText">Είναι η πρώτη σας επίσκεψη στο Μουσείο της Ακρόπολης;</string>
+    <string name="questionOneAnswerOne">Ναι</string>
+    <string name="questionOneAnswerTwo">Το έχω επισκεφθεί άλλη μια φορά</string>
+    <string name="questionOneAnswerThree">Το έχω επισκεφθεί αρκετές φορές</string>
+    <string name="questionTwoText">Πόσο συχνά επισκέπτεσθε μουσεία;</string>
+    <string name="questionTwoAnswerOne">Μία φορά το χρόνο</string>
+    <string name="questionTwoAnswerTwo">3&#8211;5 φορές το χρόνο</string>
+    <string name="questionTwoAnswerThree">άνω από 5 φορές το χρόνο</string>
+    <string name="questionThreeText">Με τι ασχολείστε;</string>
+    <string name="questionThreeAnswerOne">Μαθητής</string>
+    <string name="questionThreeAnswerTwo">Φοιτητής</string>
+    <string name="questionThreeAnswerThree">Εργαζόμενος</string>
+    <string name="questionThreeAnswerFour">Άλλο</string>
+    <string name="questionFourText">Σε ποιο ηλικιακό γκρουπ βρίσκεστε;</string>
+    <string name="questionFourAnswerOne">6&#8211;12 χρονών</string>
+    <string name="questionFourAnswerTwo">13&#8211;25 χρονών</string>
+    <string name="questionFourAnswerThree">Άνω των 25 χρονών</string>
+    <string name="Nfcmsg">Τοποθετήστε τη συσκευή πάνω από το tag για να ξεκινήσετε</string>
+    <string name="Nfcmsg2">Αναμονή&#8230;</string>
     
     <string name="scanQR">Σκανάρισμα QR</string>
     <string name="scanNFC">Σκανάρισμα NFC</string>
-    
-    <string name="nfcAlert">Τοποθετήστε την συσκευή σας πάνω από το tag.</string>
-    <string name="nfcWait">Αναμονή για το tag ...</string>
+   
     
     <string name="ScoreTitle">Αποτέλεσμα</string>
 	<string name="ScoreText1">Το σκορ σας στο quiz είναι: </string>

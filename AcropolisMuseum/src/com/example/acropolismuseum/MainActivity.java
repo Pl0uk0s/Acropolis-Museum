@@ -77,6 +77,12 @@ public class MainActivity extends Activity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+		SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+		if (sharedPreferences.getString("student", "N/A") == "no") {
+			MenuItem item = menu.findItem(R.id.quiz);
+			item.setVisible(false);
+		}
+		
 		return true;
 	}
 
@@ -165,9 +171,7 @@ public class MainActivity extends Activity {
 		try {
 			
 			SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-			//Toast.makeText(this, sharedPreferences.getString("level", "N/A") + " " + Locale.getDefault().getLanguage(), Toast.LENGTH_LONG).show();
 			url = url + "?artifact=" + code + "&mode=" + sharedPreferences.getString("level", "N/A") + "&lang=" + Locale.getDefault().getLanguage();
-	        //Toast.makeText(this, url, Toast.LENGTH_LONG).show();
 	        HttpClient httpClient = new DefaultHttpClient();
 	        HttpPost httpPost = new HttpPost(url);
 	        
@@ -176,8 +180,6 @@ public class MainActivity extends Activity {
             JSONObject json = new JSONObject(responseBody);
             String info = (String) json.get("info");
             
-            //Toast.makeText(this, info, Toast.LENGTH_LONG).show();
-
         	Intent intent = new Intent(MainActivity.this, ArtifactInfo.class);
 			intent.putExtra("info", info);
 			startActivity(intent);
