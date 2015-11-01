@@ -480,8 +480,8 @@ public class Quiz extends Activity {
 		
 		alertDialogBuilder.setNegativeButton(getString(R.string.ScoreNo),new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int id) {
-				Intent back = new Intent(getApplicationContext(), MainActivity.class);
-				startActivity(back);
+//				Intent back = new Intent(getApplicationContext(), MainActivity.class);
+//				startActivity(back);
 				finish();
 			}
 		});
